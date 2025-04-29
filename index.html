@@ -3,25 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Management System</title>
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- 
-      use html ,css,js ,bootstrap
-      management system Electronic(laptop)
-      CRUD
-      C->Create
-      R->read,retrive
-      U->update
-      D->Delete
-    -->
+
       <div class="container w-75 my-5 bg-secondary p-4">
           <h1 class="text-center text-light">Management System</h1>
           <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="productName" placeholder="Product Name">
+            <input  type="text" class="form-control" id="productName" placeholder="Product Name">
             <label for="productName">Product Name</label>
           </div>
           <div class="form-floating mb-3">
@@ -48,10 +40,10 @@
             <input type="file" class="form-control" id="productImage" placeholder="Product Image">
             <label for="productImage">Product Image</label>
           </div>
-          <button class="btn btn-primary">Add Product</button>
+          <button class="btn btn-primary" onclick="addProduct()">Add Product</button>
       </div>
       <!-- Read product -->
-       <table class="table">
+       <table class="table  text-center">
           <thead>
               <tr>
                 <th>Id</th>
