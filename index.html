@@ -13,11 +13,12 @@
       <div class="container w-75 my-5 bg-secondary p-4">
           <h1 class="text-center text-light">Management System</h1>
           <div class="form-floating mb-3">
-            <input  type="text" class="form-control" id="productName" placeholder="Product Name">
+            <input oninput="validateProductName()"
+            type="text" class="form-control" id="productName" placeholder="Product Name">
             <label for="productName">Product Name</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="productPrice" placeholder="Product Price">
+            <input  type="text" class="form-control" id="productPrice" placeholder="Product Price">
             <label for="productPrice">Product Price</label>
           </div>
           <div class="form-floating mb-3">
